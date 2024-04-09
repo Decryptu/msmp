@@ -159,16 +159,15 @@ export default function Home() {
             <CardContent>
               <p className="pb-8">
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
-                Une fois connecté, cliquez sur le{" "}
-                <span className="text-slate-600">&quot;+&quot;</span> en bas à
-                gauche du launcher. Cliquez sur l&apos;onglet{" "}
-                <span className="text-slate-600">&quot;Import zip&quot;</span>{" "}
-                et sélectionnez le fichier zip que vous venez de télécharger.
+                Une fois connecté, cliquez sur le <span className="text-slate-600">&quot;+&quot;</span> en bas à gauche
+                du launcher. Cliquez sur l&apos;onglet <span className="text-slate-600">&quot;Import zip&quot;</span> et
+                sélectionnez le fichier zip que vous venez de télécharger.
               </p>
               <div className="inline-grid">
                 <Button
                   onClick={() =>
-                    window.open("https://mega.nz/file/qU8HgIpY#bxsnxRovsfQ29fSIdC1P_4DekYUdK3pindbjMVVrgLA", "_blank")
+                    (window.location.href =
+                      "https://mega.nz/file/qU8HgIpY#bxsnxRovsfQ29fSIdC1P_4DekYUdK3pindbjMVVrgLA")
                   }
                 >
                   Télécharger le mod-pack
@@ -191,8 +190,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="pb-4">
-                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.
-                <br></br>
+                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.<br></br>
                 L&apos;adresse IP est :
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
@@ -240,8 +238,8 @@ export default function Home() {
             <CardContent>
               <p className="pb">
                 La totalité des crafts du jeu sont dispo en ouvrant votre
-                inventaire, puis clique gauche / droite sur les items dans le
-                volet pour voir comment craft, ou ce que vous pouvez craft avec.
+                inventaire, puis clique gauche / droite sur les items dans le volet
+                pour voir comment craft, ou ce que vous pouvez craft avec.
               </p>
             </CardContent>
           </Card>
