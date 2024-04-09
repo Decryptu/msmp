@@ -167,7 +167,7 @@ export default function Home() {
                 <Button
                   onClick={() =>
                     (window.location.href =
-                      "https://mega.nz/file/qU8HgIpY#bxsnxRovsfQ29fSIdC1P_4DekYUdK3pindbjMVVrgLA")
+                      "https://mega.nz/file/qU8HgIpY#bxsnxRovsfQ29fSIdC1P_4DekYUdK3pindbjMVVrgLA", "_blank")
                   }
                 >
                   Télécharger le mod-pack
