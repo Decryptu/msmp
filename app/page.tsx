@@ -89,7 +89,7 @@ export default function Home() {
             </span>
             . Proximity chat (vocal ingame), mini-map, plus de mobs et de
             biomes, + de stuff. Monero a rien payé mais c&apos;est un mégalo
-            donc je met quand même son pseudo.
+            donc je mets quand même son pseudo.
           </p>
         </div>
         <div className="pb-32">
@@ -159,8 +159,8 @@ export default function Home() {
             <CardContent>
               <p className="pb-8">
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
-                Une fois connecté, cliquez sur le &quot;+&quot; en bas à gauche
-                du launcher. Cliquez sur l&apos;onglet &quot;Import zip&quot; et
+                Une fois connecté, cliquez sur le <span className="text-slate-600">&quot;+&quot;</span> en bas à gauche
+                du launcher. Cliquez sur l&apos;onglet <span className="text-slate-600">&quot;Import zip&quot;</span> et
                 sélectionnez le fichier zip que vous venez de télécharger.
               </p>
               <div className="inline-grid">
