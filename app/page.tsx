@@ -3,7 +3,13 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Copy, CopyIcon } from "lucide-react";
+import {
+  CopyIcon,
+  RocketIcon,
+  ArchiveIcon,
+  Link2Icon,
+  BadgeInfoIcon,
+} from "lucide-react";
 import {
   Card,
   CardContent,
@@ -34,9 +40,13 @@ export default function Home() {
     }
   }, [copySuccess]);
   return (
-    <div>
-      <main className="flex min-h-screen flex-col items-center justify-between p-8">
-        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <div className="relative min-h-screen">
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-app-background bg-cover filter blur-md"></div>
+        <div className="absolute inset-0 bg-white bg-opacity-30"></div>
+      </div>
+      <main className="relative z-1 flex min-h-screen flex-col items-center justify-between p-8">
+        <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex">
           <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
             Dry me doit toujours&nbsp;
             <code className="font-mono font-bold">300 USDT</code>
@@ -54,16 +64,16 @@ export default function Home() {
                 alt="Decrypt Logo"
                 className="dark:invert"
                 width={100}
-                height={24}
+                height={21}
                 priority
               />
             </a>
           </div>
         </div>
 
-        <div className="relative flex pt-16 place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <div className="relative flex pt-16 place-items-center z-[1]">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+            className="relative"
             src="/img/title.png"
             alt="Monero SMP"
             width={600}
@@ -72,13 +82,14 @@ export default function Home() {
           />
         </div>
         <div>
-          <p className="text-center lg:px-80 sm:px-32 content-center text-lg text-slate-500">
+          <p className="text-center lg:px-80 sm:px-32 content-center text-lg text-slate-600">
             Monero SMP [Survival Multiplayer],{" "}
             <span className="font-medium text-slate-800">
               le serveur de l&apos;élite de la finance
             </span>
-            . Il a rien payé mais c&apos;est un mégalo donc je met quand même
-            son pseudo.
+            . Proximity chat (vocal ingame), mini-map, plus de mobs et de
+            biomes, + de stuff. Monero a rien payé mais c&apos;est un mégalo
+            donc je met quand même son pseudo.
           </p>
         </div>
         <div className="pb-32">
@@ -95,95 +106,146 @@ export default function Home() {
           </Button>
         </div>
       </main>
-      <div id="card-section-1" className="flex justify-center">
-        <Card className="w-[500px]">
-          <CardHeader>
-            <CardTitle>1. Installer le launcher</CardTitle>
-            <CardDescription>
-              Pour pouvoir installer les mods facilement et rejoindre le
-              serveur, le plus simple est d&apos;utiliser GDLauncher.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="pb-8">
-              Téléchargez le launcher avec le lien ci-dessous, puis rendez-vous
-              à l&apos;étape suivante pour savoir comment installer le mod-pack.
-            </p>
-            <div className="inline-grid">
-              <Button
-                onClick={() =>
-                  (window.location.href =
-                    "https://gdlauncher.com/download/windows")
-                }
+      <div className="z-1 relative px-4">
+        <div id="card-section-1" className="flex justify-center">
+          <Card className="w-[500px]">
+            <CardHeader>
+              <CardTitle className="flex">
+                <RocketIcon className="mr-2" />
+                Installer le launcher
+              </CardTitle>
+              <CardDescription>
+                Pour pouvoir installer les mods facilement et rejoindre le
+                serveur, le plus simple est d&apos;utiliser GDLauncher.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="pb-8">
+                Téléchargez le launcher avec le lien ci-dessous, puis
+                rendez-vous à l&apos;étape suivante pour savoir comment
+                installer le mod-pack.
+              </p>
+              <div className="inline-grid">
+                <Button
+                  onClick={() =>
+                    (window.location.href =
+                      "https://gdlauncher.com/download/windows")
+                  }
+                >
+                  Télécharger GDLauncher
+                </Button>
+                <a
+                  href="https://gdlauncher.com/"
+                  className="underline text-sm pt-2"
+                >
+                  Lien du site officiel.
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+        <div id="card-section-2" className="flex justify-center pt-16">
+          <Card className="w-[500px]">
+            <CardHeader>
+              <CardTitle className="flex">
+                <ArchiveIcon className="mr-2" />
+                Ajouter le mod-pack
+              </CardTitle>
+              <CardDescription>
+                Pour ajouter le mod-pack sur GDLauncher, cliquez sur le bouton
+                ci-dessous.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="pb-8">
+                Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
+                Une fois connecté, cliquez sur le &quot;+&quot; en bas à gauche
+                du launcher. Cliquez sur l&apos;onglet &quot;Import zip&quot; et
+                sélectionnez le fichier zip que vous venez de télécharger.
+              </p>
+              <div className="inline-grid">
+                <Button
+                  onClick={() =>
+                    (window.location.href =
+                      "https://gdlauncher.com/download/windows")
+                  }
+                >
+                  Télécharger le mod-pack
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+        <div id="card-section-3" className="flex justify-center pt-16">
+          <Card className="w-[500px]">
+            <CardHeader>
+              <CardTitle className="flex">
+                <Link2Icon className="mr-2" />
+                Rejoindre le serveur
+              </CardTitle>
+              <CardDescription>
+                Lance le jeu avec GDLauncher frèro, suffit de cliquer sur
+                &quot;MSMP&quot;.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="pb-8">
+                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.
+                L&apos;adresse IP c&apos;est :
+              </p>
+              {/* Make the div clickable and copy to clipboard on click */}
+              <button
+                onClick={copyToClipboard}
+                className="flex items-center space-x-2 bg-transparent border-none p-0"
               >
-                Télécharger GDLauncher
-              </Button>
-              <a
-                href="https://gdlauncher.com/"
-                className="underline text-sm pt-2"
-              >
-                Lien du site officiel.
-              </a>
-            </div>
-          </CardContent>
-        </Card>
+                <CopyIcon className="text-slate-500" />
+                <code>127.0.0.1</code>
+              </button>
+              {copySuccess && <p className="text-slate-500">{copySuccess}</p>}
+            </CardContent>
+          </Card>
+        </div>
+        <div id="card-section-4" className="flex justify-center pt-16">
+          <Card className="w-[500px]">
+            <CardHeader>
+              <CardTitle className="flex">
+                <BadgeInfoIcon className="mr-2" />
+                Informations supplémentaires
+              </CardTitle>
+              <CardDescription>
+                Shaders et utilisation des mods.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="pb">
+                Pour config le vocal ingame, il faut appuyer sur &quot;V&quot;.
+                Vous pouvez choisir et tester votre micro.
+              </p>
+            </CardContent>
+            <CardContent>
+              <p className="pb">
+                Le mod-pack contient également des shaders. Par défaut vous
+                pouvez les activer ou désactiver in-game avec &quot;K&quot;, ou
+                configurez une autre touche dans les options.
+              </p>
+            </CardContent>
+            <CardContent>
+              <p className="pb">
+                Pour ouvrir la map ingame, la touche par défaut est
+                &quot;J&quot;.
+              </p>
+            </CardContent>
+            <CardContent>
+              <p className="pb">
+                La totalité des crafts du jeu sont dispo en ouvrant votre
+                inventaire, puis clique gauche / droite sur les items dans le volet
+                pour voir comment craft, ou ce que vous pouvez craft avec.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="pb-64"></div>
       </div>
-      <div id="card-section-2" className="flex justify-center pt-16">
-        <Card className="w-[500px]">
-          <CardHeader>
-            <CardTitle>2. Ajouter le mod-pack</CardTitle>
-            <CardDescription>
-              Pour ajouter le mod-pack sur GDLauncher, cliquez sur le bouton
-              ci-dessous.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="pb-8">
-              Ouvrez GDLauncher et liez votre compte Minecraft au launcher. Une
-              fois connecté, cliquez sur le &quot;+&quot; en bas à gauche du
-              launcher. Cliquez sur l&apos;onglet &quot;Import zip&quot; et
-              sélectionnez le fichier zip que vous venez de télécharger.
-            </p>
-            <div className="inline-grid">
-              <Button
-                onClick={() =>
-                  (window.location.href =
-                    "https://gdlauncher.com/download/windows")
-                }
-              >
-                Télécharger le mod-pack
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-      <div id="card-section-3" className="flex justify-center pt-16">
-        <Card className="w-[500px]">
-          <CardHeader>
-            <CardTitle>3. Rejoindre le serveur</CardTitle>
-            <CardDescription>
-              Lance le jeu avec GDLauncher frèro, suffit de cliquer sur
-              &quot;MSMP&quot;.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="pb-8">
-              Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.
-              L&apos;adresse IP c&apos;est :
-            </p>
-            {/* Make the div clickable and copy to clipboard on click */}
-            <button
-              onClick={copyToClipboard}
-              className="flex items-center space-x-2 bg-transparent border-none p-0"
-            >
-              <CopyIcon className="text-slate-500" />
-              <code>127.0.0.1</code>
-            </button>
-            {copySuccess && <p className="text-slate-500">{copySuccess}</p>}
-          </CardContent>
-        </Card>
-      </div>
-      <div className="pb-32"></div>
     </div>
   );
 }
