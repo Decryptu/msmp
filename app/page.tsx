@@ -189,9 +189,9 @@ export default function Home() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="pb-8">
-                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.
-                L&apos;adresse IP c&apos;est :
+              <p className="pb-4">
+                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.<br></br>
+                L&apos;adresse IP est :
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
               <button
