@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "MSMP",
   description: "Le serveur Minecraft de l'élite",
   openGraph: {
-    images: "app/opengraph-image.jpg",
+    images: "/opengraph-image.jpg",
   },
 };
 
