@@ -194,16 +194,22 @@ export default function Home() {
               <p className="pb-8">
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
                 Une fois connecté, une fenêtre devrait s&apos;ouvrir pour vous
-                proposer de créer ou d&apos;importer une instance. Sélectionnez
-                l&apos;onglet pour importer une instance. Cliquez sur{" "}
+                proposer de créer ou d&apos;importer une instance (Cliquez sur
+                [+ Add Instance] en haut à droite si ce n&apos;est pas le cas).
+                Sélectionnez l&apos;onglet pour importer une instance. Cliquez
+                sur le logo vert{" "}
                 <span className="text-slate-500 font-bold">
-                  &quot;CurseForge Zip&quot;
+                  &quot;MRpack&quot;
                 </span>{" "}
-                et sélectionnez le fichier zip que vous venez de télécharger.
+                et sélectionnez le fichier .mrpack que vous venez de télécharger
+                (touche le bouton là en bas).<br></br><br></br> Si jamais
+                l&apos;importation bloque sur 3%, attendez juste une minute ou
+                deux, et vous pourrez fermer cette fenêtre, l&apos;importation
+                aura quand même fonctionné.
               </p>
               <div className="inline-grid">
                 <a
-                  href="https://mega.nz/file/qAUjVD6L#_q-wLlPW2sobaM9Eo9r8Pf0kJJXYbfEm0__1RqSf6Ik"
+                  href="https://mega.nz/file/3BVTVb6T#0d_likSyIZPMUATaSanaQXuRbHiEozUY-gnCv_AOhiY"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -229,12 +235,12 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="pb-4">
-                Allez sur &quot;Multiplayer&quot;, et autorisez Minecraft à
-                utiliser votre réseau, le serveur devrait déjà être
-                pré-configuré, si ça bloque sur &quot;Pinging&quot;, retournez
-                au menu du jeu puis de nouveau sur &quot;Multiplayer&quot; si
-                vous ne voyez pas de serveur, ajoutez le. L&apos;adresse IP est
-                :
+                Faut tout lire avant de faire la manip (Vraiment). Allez sur
+                &quot;Multiplayer&quot;, et autorisez Minecraft à utiliser votre
+                réseau, le serveur devrait déjà être pré-configuré, si ça bloque
+                sur &quot;Pinging&quot;, retournez au menu du jeu puis de
+                nouveau sur &quot;Multiplayer&quot; si vous ne voyez pas de
+                serveur, ajoutez le. L&apos;adresse IP est :
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
               <button
