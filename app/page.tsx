@@ -83,12 +83,16 @@ export default function Home() {
         </div>
         <div>
           <p className="text-center lg:px-80 sm:px-32 content-center text-lg text-slate-600">
-            Monero SMP [Survival Multiplayer],{" "}
-            <span className="font-medium text-slate-800">
-              le serveur de l&apos;élite de la finance
-            </span>
-            . Proximity chat (vocal ingame), mini-map, plus de mobs et de
-            biomes, + de stuff. Monero a rien payé mais c&apos;est un mégalo
+            Monero SMP [Survival Multiplayer], le serveur de l&apos;élite de la
+            finance .{" "}
+            <span className="font-medium text-slate-800">Proximity chat</span>{" "}
+            (vocal ingame),{" "}
+            <span className="font-medium text-slate-800">mini-map</span>,{" "}
+            <span className="font-medium text-slate-800">+ de mobs</span>,{" "}
+            <span className="font-medium text-slate-800">+ de biomes</span>,{" "}
+            <span className="font-medium text-slate-800">+ de stuff</span>,{" "}
+            <span className="font-medium text-slate-800">+ de dimensions</span>{" "}
+            (Aether, Twilight...). Monero a rien payé mais c&apos;est un mégalo
             donc je mets quand même son pseudo.
           </p>
         </div>
