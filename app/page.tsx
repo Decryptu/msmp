@@ -171,6 +171,8 @@ export default function Home() {
                 </Button>
                 <a
                   href="https://gdlauncher.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="underline text-sm pt-2"
                 >
                   Lien du site officiel.
