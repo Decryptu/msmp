@@ -108,6 +108,7 @@ export default function Home() {
         </div>
         <div className="pb-32">
           <Button
+          className="animate-bounce"
             variant="default"
             id="rejoindre"
             onClick={() => {
@@ -123,7 +124,7 @@ export default function Home() {
       </main>
       <div className="z-1 relative px-4">
         <div id="card-section-1" className="flex justify-center">
-          <Card className="w-[500px]">
+          <Card className="w-[500px] hover:bg-slate-100/80 transition-all">
             <CardHeader>
               <CardTitle className="flex">
                 <RocketIcon className="mr-2" />
@@ -160,7 +161,7 @@ export default function Home() {
           </Card>
         </div>
         <div id="card-section-2" className="flex justify-center pt-16">
-          <Card className="w-[500px]">
+          <Card className="w-[500px] hover:bg-slate-100/80 transition-all">
             <CardHeader>
               <CardTitle className="flex">
                 <ArchiveIcon className="mr-2" />
@@ -197,7 +198,7 @@ export default function Home() {
           </Card>
         </div>
         <div id="card-section-3" className="flex justify-center pt-16">
-          <Card className="w-[500px]">
+          <Card className="w-[500px] hover:bg-slate-100/80 transition-all">
             <CardHeader>
               <CardTitle className="flex">
                 <Link2Icon className="mr-2" />
@@ -230,7 +231,7 @@ export default function Home() {
           </Card>
         </div>
         <div id="card-section-4" className="flex justify-center pt-16">
-          <Card className="w-[500px]">
+          <Card className="w-[500px] hover:bg-slate-100/80 transition-all">
             <CardHeader>
               <CardTitle className="flex">
                 <BadgeInfoIcon className="mr-2" />
@@ -240,62 +241,76 @@ export default function Home() {
                 Shaders et utilisation des mods.
               </CardDescription>
             </CardHeader>
-            <CardContent className="flex items-start py-2 border-t border-b">
+            <CardContent className="flex items-start py-4 border-t border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
-                <Mic className="h-4 w-full" />
+                <Mic className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
-                Pour config le vocal ingame, il faut appuyer sur &quot;
-                <span className="font-medium text-slate-800">V</span>&quot;.
-                Vous pouvez choisir et tester votre micro.
+                Pour config le vocal ingame, il faut appuyer sur{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  V
+                </span>
+                . Vous pouvez choisir et tester votre micro.
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-2 border-b">
+            <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
-                <TreeDeciduous className="h-4 w-full" />
+                <TreeDeciduous className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
                 Le mod-pack contient également des shaders. Par défaut vous
-                pouvez les activer ou désactiver in-game avec &quot;
-                <span className="font-medium text-slate-800">K</span>&quot;, ou
-                configurez une autre touche dans les options.
+                pouvez les activer ou désactiver in-game avec{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  K
+                </span>
+                , ou configurez une autre touche dans les options.
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-2 border-b">
+            <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
-                <Map className="h-4 w-full" />
+                <Map className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
-                Pour ouvrir la map ingame, la touche par défaut est &quot;
-                <span className="font-medium text-slate-800">J</span>&quot;.
+                Pour ouvrir la map ingame, la touche par défaut est{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  J
+                </span>
+                .
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-2 border-b">
+            <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
-                <SmilePlus className="h-4 w-full" />
+                <SmilePlus className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
-                Pour ouvrir la roue des emotes, la touche par défaut est &quot;
-                <span className="font-medium text-slate-800">B</span>&quot;.
+                Pour ouvrir la roue des emotes, la touche par défaut est{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  B
+                </span>
+                .
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-2 border-b">
+            <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
-                <MapPinned className="h-4 w-full" />
+                <MapPinned className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
-                Vous pouvez créer des waypoints, la touche par défaut est &quot;
-                <span className="font-medium text-slate-800">N</span>&quot;.
-                Vous pouvez ensuite les activer ou désactiver avec &quot;
-                <span className="font-medium text-slate-800">W</span>&quot;. Les
-                waypoints servent à enregistrer des emplacements, maison,
+                Vous pouvez créer des waypoints, la touche par défaut est{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  N
+                </span>
+                . Vous pouvez ensuite les activer ou les désactiver avec{" "}
+                <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                  W
+                </span>
+                . Les waypoints servent à enregistrer des emplacements, maison,
                 donjon, village... Pour ne pas avoir besoin de noter les
                 coordonnées.
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-2">
+            <CardContent className="flex items-start py-4 hover:bg-slate-50 hover:rounded-b-lg transition-all">
               <div className="flex-none w-6">
-                <Box className="h-4 w-full" />
+                <Box className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
                 La totalité des crafts du jeu sont dispo en ouvrant votre
