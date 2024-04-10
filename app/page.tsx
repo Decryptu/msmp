@@ -354,8 +354,8 @@ export default function Home() {
                 <Box className="h-4 w-full mt-1" />
               </div>
               <p className="flex-grow">
-                La totalité des crafts du jeu sont dispo en ouvrant votre
-                inventaire, puis clique gauche / droite sur les items dans le
+                La totalité des crafts du jeu sont dispos en ouvrant votre
+                inventaire, puis clic gauche / droit sur les items dans le
                 volet pour voir comment craft, ou ce que vous pouvez craft avec.
               </p>
             </CardContent>
