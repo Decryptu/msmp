@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
@@ -38,6 +38,16 @@ export default function Home() {
     }
   };
 
+  // New function to copy the specified text
+  const copyTextToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      alert("Texte copié : " + text); // Feedback to the user, customize as needed
+    } catch (err) {
+      alert("Impossible de copier"); // Error feedback
+    }
+  };
+
   // Effect to reset copy success message after a few seconds
   useEffect(() => {
     if (copySuccess) {
@@ -45,6 +55,12 @@ export default function Home() {
       return () => clearTimeout(timer);
     }
   }, [copySuccess]);
+
+  // Wrap the new copy function to prevent re-creation on each render
+  const handleCopyClick = useCallback(() => {
+    copyTextToClipboard("TRV9xmkjkfkWKGPNAXcCTWtFLohYoB3rfz");
+  }, []);
+
   return (
     <div className="relative min-h-screen">
       <div className="absolute inset-0 z-0">
@@ -53,10 +69,12 @@ export default function Home() {
       </div>
       <main className="relative z-1 flex min-h-screen flex-col items-center justify-between p-8">
         <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex">
-          <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-            Dry me doit toujours&nbsp;
-            <code className="font-mono font-bold">300 USDT</code>
-          </p>
+          <div className="cursor-pointer" onClick={handleCopyClick}>
+            <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+              Dry me doit toujours&nbsp;
+              <code className="font-mono font-bold">300 USDT</code>
+            </p>
+          </div>
           <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
             <a
               className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -108,7 +126,7 @@ export default function Home() {
         </div>
         <div className="pb-32">
           <Button
-          className="animate-bounce"
+            className="animate-bounce h-12 w-48"
             variant="default"
             id="rejoindre"
             onClick={() => {
