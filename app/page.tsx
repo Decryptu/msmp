@@ -204,9 +204,8 @@ export default function Home() {
                 utiliser votre réseau, le serveur devrait déjà être
                 pré-configuré, si ça bloque sur &quot;Pinging&quot;, retournez
                 au menu du jeu puis de nouveau sur &quot;Multiplayer&quot; si
-                vous ne voyez pas de serveur, ajoutez le.
-                <br></br>
-                L&apos;adresse IP est :
+                vous ne voyez pas de serveur, ajoutez le. L&apos;adresse IP est
+                :
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
               <button
@@ -233,27 +232,29 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="pb">
-                Pour config le vocal ingame, il faut appuyer sur &quot;<span className="font-medium text-slate-800">V</span>&quot;.
+                Pour config le vocal ingame, il faut appuyer sur &quot;
+                <span className="font-medium text-slate-800">V</span>&quot;.
                 Vous pouvez choisir et tester votre micro.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
                 Le mod-pack contient également des shaders. Par défaut vous
-                pouvez les activer ou désactiver in-game avec &quot;<span className="font-medium text-slate-800">K</span>&quot;, ou
+                pouvez les activer ou désactiver in-game avec &quot;
+                <span className="font-medium text-slate-800">K</span>&quot;, ou
                 configurez une autre touche dans les options.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
-                Pour ouvrir la map ingame, la touche par défaut est
-                &quot;<span className="font-medium text-slate-800">J</span>&quot;.
+                Pour ouvrir la map ingame, la touche par défaut est &quot;
+                <span className="font-medium text-slate-800">J</span>&quot;.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
-                Pour ouvrir la roue des emotes, la touche par défaut est
-                &quot;<span className="font-medium text-slate-800">B</span>&quot;.
+                Pour ouvrir la roue des emotes, la touche par défaut est &quot;
+                <span className="font-medium text-slate-800">B</span>&quot;.
               </p>
             </CardContent>
             <CardContent>
