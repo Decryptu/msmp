@@ -110,7 +110,7 @@ export default function Home() {
           <Button
             variant="default"
             onClick={() => {
-              const section = document.getElementById("card-section-1");
+              const section = document.getElementById("rejoindre");
               if (section) {
                 section.scrollIntoView({ behavior: "smooth" });
               }
@@ -120,7 +120,7 @@ export default function Home() {
           </Button>
         </div>
       </main>
-      <div className="z-1 relative px-4">
+      <div className="z-1 relative px-4" id="rejoindre">
         <div id="card-section-1" className="flex justify-center">
           <Card className="w-[500px]">
             <CardHeader>
