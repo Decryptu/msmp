@@ -106,7 +106,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <p className="text-center lg:px-80 sm:px-32 content-center text-lg text-slate-600">
+          <p className="text-center lg:px-80 sm:px-32 sm:text-sm content-center lg:text-lg text-slate-600">
             Monero SMP [Survival Multiplayer], le serveur de l&apos;élite de la
             finance.{" "}
             <span className="font-medium text-slate-800">Proximity chat</span>{" "}
