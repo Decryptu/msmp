@@ -84,10 +84,11 @@ export default function Home() {
         <div>
           <p className="text-center lg:px-80 sm:px-32 content-center text-lg text-slate-600">
             Monero SMP [Survival Multiplayer], le serveur de l&apos;élite de la
-            finance .{" "}
+            finance.{" "}
             <span className="font-medium text-slate-800">Proximity chat</span>{" "}
             (vocal ingame),{" "}
             <span className="font-medium text-slate-800">mini-map</span>,{" "}
+            <span className="font-medium text-slate-800">emotes</span>,{" "}
             <span className="font-medium text-slate-800">+ de mobs</span>,{" "}
             <span className="font-medium text-slate-800">+ de biomes</span>,{" "}
             <span className="font-medium text-slate-800">+ de stuff</span>,{" "}
@@ -232,27 +233,27 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="pb">
-                Pour config le vocal ingame, il faut appuyer sur &quot;V&quot;.
+                Pour config le vocal ingame, il faut appuyer sur &quot;<span className="font-medium text-slate-800">V</span>&quot;.
                 Vous pouvez choisir et tester votre micro.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
                 Le mod-pack contient également des shaders. Par défaut vous
-                pouvez les activer ou désactiver in-game avec &quot;K&quot;, ou
+                pouvez les activer ou désactiver in-game avec &quot;<span className="font-medium text-slate-800">K</span>&quot;, ou
                 configurez une autre touche dans les options.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
                 Pour ouvrir la map ingame, la touche par défaut est
-                &quot;J&quot;.
+                &quot;<span className="font-medium text-slate-800">J</span>&quot;.
               </p>
             </CardContent>
             <CardContent>
               <p className="pb">
                 Pour ouvrir la roue des emotes, la touche par défaut est
-                &quot;B&quot;.
+                &quot;<span className="font-medium text-slate-800">B</span>&quot;.
               </p>
             </CardContent>
             <CardContent>
