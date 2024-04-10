@@ -126,7 +126,7 @@ export default function Home() {
         </div>
         <div className="pb-32">
           <Button
-            className="animate-bounce h-12 w-48"
+            className="animate-bounce text-slate-900 h-12 w-48 bg-[url('/img/texture.png')] bg-cover rounded-md border-[#0A402D] border-4"
             variant="default"
             id="rejoindre"
             onClick={() => {
