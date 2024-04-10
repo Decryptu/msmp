@@ -7,9 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MSMP",
   description: "Le serveur Minecraft de l'élite",
-  openGraph: {
-    images: "/opengraph-image.jpg",
-  },
+  metadataBase: new URL("https://monerosmp.vercel.app/"),
 };
 
 export default function RootLayout({
