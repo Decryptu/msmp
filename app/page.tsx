@@ -161,9 +161,11 @@ export default function Home() {
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
                 Une fois connecté, une fenêtre devrait s&apos;ouvrir pour vous
                 proposer de créer ou d&apos;importer une instance. Sélectionnez
-                l&apos;onglet pour importer une instance. Cliquez sur <span className="text-slate-500 font-bold">&quot;CurseForge
-                Zip&quot;</span> et sélectionnez le fichier zip que vous venez de
-                télécharger.
+                l&apos;onglet pour importer une instance. Cliquez sur{" "}
+                <span className="text-slate-500 font-bold">
+                  &quot;CurseForge Zip&quot;
+                </span>{" "}
+                et sélectionnez le fichier zip que vous venez de télécharger.
               </p>
               <div className="inline-grid">
                 <a
@@ -193,7 +195,11 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="pb-4">
-                Allez sur &quot;Multiplayer&quot; et ajoutez un serveur.
+                Allez sur &quot;Multiplayer&quot;, et autorisez Minecraft à
+                utiliser votre réseau, le serveur devrait déjà être
+                pré-configuré, si ça bloque sur &quot;Pinging&quot;, retournez
+                au menu du jeu puis de nouveau sur &quot;Multiplayer&quot; si
+                vous ne voyez pas de serveur, ajoutez le.
                 <br></br>
                 L&apos;adresse IP est :
               </p>
