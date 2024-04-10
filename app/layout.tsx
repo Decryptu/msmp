@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MSMP",
-  description: "Le serveur Minecraft de l'élite",
+  title: "Monero SMP",
+  description: "Le serveur Minecraft de l'élite de la finance.",
   metadataBase: new URL("https://monerosmp.vercel.app/"),
 };
 
