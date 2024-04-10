@@ -229,17 +229,17 @@ export default function Home() {
                 Rejoindre le serveur
               </CardTitle>
               <CardDescription>
-                Lance le jeu avec GDLauncher frèro, suffit de cliquer sur
+                Lance le jeu avec GDLauncher frérot, suffit de cliquer sur
                 &quot;Monero SMP&quot;.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="pb-4">
-                Faut tout lire avant de faire la manip (Vraiment). Allez sur
-                &quot;Multiplayer&quot;, et autorisez Minecraft à utiliser votre
-                réseau, le serveur devrait déjà être pré-configuré, si ça bloque
-                sur &quot;Pinging&quot;, retournez au menu du jeu puis de
-                nouveau sur &quot;Multiplayer&quot; si vous ne voyez pas de
+                Faut tout lire avant de faire la manip (vraiment). Allez sur
+                &quot;Multiplayer&quot; et autorisez Minecraft à utiliser votre
+                réseau, le serveur devrait déjà être pré-configuré. Si ça bloque
+                sur &quot;Pinging&quot;, retournez au menu du jeu puis cliquez de
+                nouveau sur &quot;Multiplayer&quot;. Si vous ne voyez pas de
                 serveur, ajoutez le. L&apos;adresse IP est :
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
