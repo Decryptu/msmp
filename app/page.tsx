@@ -109,6 +109,7 @@ export default function Home() {
         <div className="pb-32">
           <Button
             variant="default"
+            id="rejoindre"
             onClick={() => {
               const section = document.getElementById("rejoindre");
               if (section) {
@@ -120,7 +121,7 @@ export default function Home() {
           </Button>
         </div>
       </main>
-      <div className="z-1 relative px-4" id="rejoindre">
+      <div className="z-1 relative px-4">
         <div id="card-section-1" className="flex justify-center">
           <Card className="w-[500px]">
             <CardHeader>
