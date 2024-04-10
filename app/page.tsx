@@ -9,6 +9,12 @@ import {
   ArchiveIcon,
   Link2Icon,
   BadgeInfoIcon,
+  MapPinned,
+  Box,
+  Mic,
+  TreeDeciduous,
+  Map,
+  SmilePlus,
 } from "lucide-react";
 import {
   Card,
@@ -91,7 +97,7 @@ export default function Home() {
             <span className="font-medium text-slate-800">emotes</span>,{" "}
             <span className="font-medium text-slate-800">backpacks</span>,{" "}
             <span className="font-medium text-slate-800">pierres de TP</span>{" "}
-            (Comme les Zaap de Dofus),{" "}
+            (comme les Zaap de Dofus),{" "}
             <span className="font-medium text-slate-800">+ de mobs</span>,{" "}
             <span className="font-medium text-slate-800">+ de biomes</span>,{" "}
             <span className="font-medium text-slate-800">+ de stuff</span>,{" "}
@@ -233,35 +239,64 @@ export default function Home() {
                 Shaders et utilisation des mods.
               </CardDescription>
             </CardHeader>
-            <CardContent>
-              <p className="pb">
+            <CardContent className="flex items-start py-2 border-t border-b">
+              <div className="flex-none w-6">
+                <Mic className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
                 Pour config le vocal ingame, il faut appuyer sur &quot;
                 <span className="font-medium text-slate-800">V</span>&quot;.
                 Vous pouvez choisir et tester votre micro.
               </p>
             </CardContent>
-            <CardContent>
-              <p className="pb">
+            <CardContent className="flex items-start py-2 border-b">
+              <div className="flex-none w-6">
+                <TreeDeciduous className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
                 Le mod-pack contient également des shaders. Par défaut vous
                 pouvez les activer ou désactiver in-game avec &quot;
                 <span className="font-medium text-slate-800">K</span>&quot;, ou
                 configurez une autre touche dans les options.
               </p>
             </CardContent>
-            <CardContent>
-              <p className="pb">
+            <CardContent className="flex items-start py-2 border-b">
+              <div className="flex-none w-6">
+                <Map className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
                 Pour ouvrir la map ingame, la touche par défaut est &quot;
                 <span className="font-medium text-slate-800">J</span>&quot;.
               </p>
             </CardContent>
-            <CardContent>
-              <p className="pb">
+            <CardContent className="flex items-start py-2 border-b">
+              <div className="flex-none w-6">
+                <SmilePlus className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
                 Pour ouvrir la roue des emotes, la touche par défaut est &quot;
                 <span className="font-medium text-slate-800">B</span>&quot;.
               </p>
             </CardContent>
-            <CardContent>
-              <p className="pb">
+            <CardContent className="flex items-start py-2 border-b">
+              <div className="flex-none w-6">
+                <MapPinned className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
+                Vous pouvez créer des waypoints, la touche par défaut est &quot;
+                <span className="font-medium text-slate-800">N</span>&quot;.
+                Vous pouvez ensuite les activer ou désactiver avec &quot;
+                <span className="font-medium text-slate-800">W</span>&quot;. Les
+                waypoints servent à enregistrer des emplacements, maison,
+                donjon, village... Pour ne pas avoir besoin de noter les
+                coordonnées.
+              </p>
+            </CardContent>
+            <CardContent className="flex items-start py-2">
+              <div className="flex-none w-6">
+                <Box className="h-4 w-full" />
+              </div>
+              <p className="flex-grow">
                 La totalité des crafts du jeu sont dispo en ouvrant votre
                 inventaire, puis clique gauche / droite sur les items dans le
                 volet pour voir comment craft, ou ce que vous pouvez craft avec.
