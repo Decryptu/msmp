@@ -251,6 +251,12 @@ export default function Home() {
             </CardContent>
             <CardContent>
               <p className="pb">
+                Pour ouvrir la roue des emotes, la touche par défaut est
+                &quot;B&quot;.
+              </p>
+            </CardContent>
+            <CardContent>
+              <p className="pb">
                 La totalité des crafts du jeu sont dispo en ouvrant votre
                 inventaire, puis clique gauche / droite sur les items dans le
                 volet pour voir comment craft, ou ce que vous pouvez craft avec.
