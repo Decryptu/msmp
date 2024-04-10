@@ -15,6 +15,7 @@ import {
   TreeDeciduous,
   Map,
   SmilePlus,
+  TriangleAlert,
 } from "lucide-react";
 import {
   Card,
@@ -194,18 +195,29 @@ export default function Home() {
               <p className="pb-8">
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
                 Une fois connecté, une fenêtre devrait s&apos;ouvrir pour vous
-                proposer de créer ou d&apos;importer une instance (Cliquez sur
-                [+ Add Instance] en haut à droite si ce n&apos;est pas le cas).
-                Sélectionnez l&apos;onglet pour importer une instance. Cliquez
-                sur le logo vert{" "}
+                proposer de créer ou d&apos;importer une instance (cliquez sur{" "}
+                <span className="text-slate-500 font-bold">
+                  [+ Add Instance]
+                </span>{" "}
+                en haut à droite si ce n&apos;est pas le cas). Sélectionnez
+                l&apos;onglet pour importer une instance. Cliquez sur le logo
+                vert{" "}
                 <span className="text-slate-500 font-bold">
                   &quot;MRpack&quot;
                 </span>{" "}
-                et sélectionnez le fichier .mrpack que vous venez de télécharger
-                (touche le bouton là en bas).<br></br><br></br> Si jamais
-                l&apos;importation bloque sur 3%, attendez juste une minute ou
-                deux, et vous pourrez fermer cette fenêtre, l&apos;importation
-                aura quand même fonctionné.
+                et sélectionnez le fichier <code className="text-slate-600">.mrpack</code> que vous venez
+                de télécharger (
+                <span className="italic text-slate-600">
+                  touche le bouton là en bas
+                </span>
+                ).<br></br>
+                <br></br>
+                <TriangleAlert className="text-slate-500 h-4 w-4" />
+                <span className="text-slate-500 text-sm">
+                  Si jamais l&apos;importation bloque sur 3%, attendez juste une
+                  minute ou deux, et vous pourrez fermer cette fenêtre,
+                  l&apos;importation aura quand même fonctionné.
+                </span>
               </p>
               <div className="inline-grid">
                 <a
@@ -237,20 +249,25 @@ export default function Home() {
               <p className="pb-4">
                 Faut tout lire avant de faire la manip (vraiment). Allez sur
                 &quot;Multiplayer&quot; et autorisez Minecraft à utiliser votre
-                réseau, le serveur devrait déjà être pré-configuré. Si ça bloque
-                sur &quot;Pinging&quot;, retournez au menu du jeu puis cliquez de
-                nouveau sur &quot;Multiplayer&quot;. Si vous ne voyez pas de
-                serveur, ajoutez le. L&apos;adresse IP est :
+                réseau, le serveur devrait déjà être pré-configuré.
+                <br></br>
+                <br></br>
+                <TriangleAlert className="text-slate-500 h-4 w-4" />
+                <span className="text-slate-500 text-sm">
+                  Si ça bloque sur &quot;Pinging&quot;, retournez au menu du jeu
+                  puis cliquez de nouveau sur &quot;Multiplayer&quot;. Si vous
+                  ne voyez pas de serveur, ajoutez le. L&apos;adresse IP est :
+                </span>
               </p>
               {/* Make the div clickable and copy to clipboard on click */}
               <button
                 onClick={copyToClipboard}
                 className="flex items-center space-x-2 bg-transparent border-none p-0"
               >
-                <CopyIcon className="text-slate-500" />
-                <code>msmp.minecraft.best</code>
+                <CopyIcon className="text-slate-600" />
+                <code className="text-slate-600">msmp.minecraft.best</code>
               </button>
-              {copySuccess && <p className="text-slate-500">{copySuccess}</p>}
+              {copySuccess && <p className="text-slate-600">{copySuccess}</p>}
             </CardContent>
           </Card>
         </div>
@@ -332,7 +349,7 @@ export default function Home() {
                 coordonnées.
               </p>
             </CardContent>
-            <CardContent className="flex items-start py-4 hover:bg-slate-50 hover:rounded-b-lg transition-all">
+            <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
               <div className="flex-none w-6">
                 <Box className="h-4 w-full mt-1" />
               </div>
@@ -340,6 +357,15 @@ export default function Home() {
                 La totalité des crafts du jeu sont dispo en ouvrant votre
                 inventaire, puis clique gauche / droite sur les items dans le
                 volet pour voir comment craft, ou ce que vous pouvez craft avec.
+              </p>
+            </CardContent>
+            <CardContent className="flex items-start py-4 hover:bg-slate-50 hover:rounded-b-lg transition-all">
+              <div className="flex-none w-6">
+                <TriangleAlert className="h-4 w-full mt-1" />
+              </div>
+              <p className="flex-grow">
+                Si vous rencontrez des bugs, ou si vous avez des soucis pour le
+                setup, merci de contacter Monero par mp sur Telegram.
               </p>
             </CardContent>
           </Card>
