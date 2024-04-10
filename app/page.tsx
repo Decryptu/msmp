@@ -159,15 +159,15 @@ export default function Home() {
             <CardContent>
               <p className="pb-8">
                 Ouvrez GDLauncher et liez votre compte Minecraft au launcher.
-                Une fois connecté, cliquez sur le{" "}
-                <span className="text-slate-600">&quot;+&quot;</span> en bas à
-                gauche du launcher. Cliquez sur l&apos;onglet{" "}
-                <span className="text-slate-600">&quot;Import zip&quot;</span>{" "}
-                et sélectionnez le fichier zip que vous venez de télécharger.
+                Une fois connecté, une fenêtre devrait s&apos;ouvrir pour vous
+                proposer de créer ou d&apos;importer une instance. Sélectionnez
+                l&apos;onglet pour importer une instance. Cliquez sur <span className="text-slate-500 font-bold">&quot;CurseForge
+                Zip&quot;</span> et sélectionnez le fichier zip que vous venez de
+                télécharger.
               </p>
               <div className="inline-grid">
                 <a
-                  href="https://mega.nz/file/qU8HgIpY#bxsnxRovsfQ29fSIdC1P_4DekYUdK3pindbjMVVrgLA"
+                  href="https://mega.nz/file/qAUjVD6L#_q-wLlPW2sobaM9Eo9r8Pf0kJJXYbfEm0__1RqSf6Ik"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -188,7 +188,7 @@ export default function Home() {
               </CardTitle>
               <CardDescription>
                 Lance le jeu avec GDLauncher frèro, suffit de cliquer sur
-                &quot;MSMP&quot;.
+                &quot;Monero SMP&quot;.
               </CardDescription>
             </CardHeader>
             <CardContent>
