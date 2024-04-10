@@ -89,6 +89,9 @@ export default function Home() {
             (vocal ingame),{" "}
             <span className="font-medium text-slate-800">mini-map</span>,{" "}
             <span className="font-medium text-slate-800">emotes</span>,{" "}
+            <span className="font-medium text-slate-800">backpacks</span>,{" "}
+            <span className="font-medium text-slate-800">pierres de TP</span>{" "}
+            (Comme les Zaap de Dofus),{" "}
             <span className="font-medium text-slate-800">+ de mobs</span>,{" "}
             <span className="font-medium text-slate-800">+ de biomes</span>,{" "}
             <span className="font-medium text-slate-800">+ de stuff</span>,{" "}
