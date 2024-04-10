@@ -304,7 +304,7 @@ export default function Home() {
                 <span className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-b-4 border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
                   K
                 </span>
-                , ou configurez une autre touche dans les options.
+                , ou configurer une autre touche dans les options.
               </p>
             </CardContent>
             <CardContent className="flex items-start py-4 border-b hover:bg-slate-50 transition-all">
