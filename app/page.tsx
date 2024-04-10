@@ -223,7 +223,7 @@ export default function Home() {
                 className="flex items-center space-x-2 bg-transparent border-none p-0"
               >
                 <CopyIcon className="text-slate-500" />
-                <code>66.59.210.75:25565</code>
+                <code>msmp.minecraft.best</code>
               </button>
               {copySuccess && <p className="text-slate-500">{copySuccess}</p>}
             </CardContent>
